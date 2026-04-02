@@ -1,6 +1,6 @@
 {
   "name": "vulk-mcp-server",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "VULK MCP Server — Generate, edit, deploy, and manage full-stack web applications from any AI coding tool.",
   "keywords": [
     "mcp",
@@ -58,5 +58,5 @@
   "engines": {
     "node": ">=18.0.0"
   },
-  "mcpName": "io.github.VULK-dev/vulk-mcp-server"
+  "mcpName": "io.github.devjoaocastro/vulk-mcp-server"
 }

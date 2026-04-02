@@ -1,17 +1,17 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-  "name": "io.github.VULK-dev/vulk-mcp-server",
-  "description": "VULK MCP Server — Generate, edit, deploy, and manage full-stack web applications from any AI coding tool.",
+  "name": "io.github.devjoaocastro/vulk-mcp-server",
+  "description": "Build, edit, and deploy full-stack web apps from any AI assistant.",
   "repository": {
     "url": "https://github.com/VULK-dev/vulk-mcp-server",
     "source": "github"
   },
-  "version": "1.0.0",
+  "version": "1.0.1",
   "packages": [
     {
       "registryType": "npm",
       "identifier": "vulk-mcp-server",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "transport": {
         "type": "stdio"
       },
